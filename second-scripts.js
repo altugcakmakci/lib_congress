@@ -37,7 +37,7 @@ let displayResults = function (results) {
 
   for (let i = 0; i < results.length; i++) {
     let issueEl = document.createElement('div');
-    issueEl.classList = 'row p2 m1 d-flex';
+    issueEl.classList = 'row p-2 m-1 d-flex flex-column border border-primary';
 
     let titleEl = document.createElement('p');
     titleEl.textContent = results[i].title;
@@ -56,7 +56,7 @@ let displayResults = function (results) {
 
     let urlEl = document.createElement('button');
     urlEl.textContent = "Read More";
-    urlEl.classList = "btn btn-dark";
+    urlEl.classList = "btn btn-dark w-25 p-1";
     urlEl.setAttribute('data-attribute', results[i].url);
     urlEl.addEventListener("click",function(event){
 
