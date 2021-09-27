@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
+  />
+  <link>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Library of Congress</title>
+  </head>
+<body>
+    <main>
+        <section class="container ml-0">
+            <div class="row">
+                     <!-- this will be the search portion on the side -->
+                <div class="col-2 bg-info vh-100 p-2">
+                    <div class="input-group">
+                        <h3>Libary of Congress Search Engine</h3>
+                        <div class="form-outline">
+                        <input type="search" id="form1" class="form-control" />
+                        <label class="form-label" for="form1"></label>
+                        </div>
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                            Manuscripts
+                            </button>
+                            <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Link 1</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                        </div>
+                        <!-- search button -->
+                        <button type="button" class="btn btn-success">Search</button>
+                    </div>
+                        <!-- back button -->
+                    <div>
+                        <button type="button" class="btn btn-danger">Go Back</button>
+                    </div>
+                </div>
+
+                <!-- this will be the search results -->
+                <div class="col-10">
+                    <div class="container">
+                        <div class="row">
+                            <div><h4>Showing results for</h4><div id="search-text"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+
+        </section>
+
+    </main>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
